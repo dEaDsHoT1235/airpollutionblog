@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHE110 PROJECT</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: black;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.PP1{
+  background: url("images/BGI1.jpg");
+  padding: 100px;
+  cursor: pointer;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.PP2 {
+  background: url("images/BGI1.jpg");
+  padding: 100px;
+  cursor: pointer;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.PP3 {
+  background: url("images/BGI1.jpg");
+  padding: 100px;
+  cursor: pointer;
+   border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  
+}
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  
+}
+
+#id1{
+  background-color: rgb(12, 173, 236);
+  color: white;
+}
+#id2{
+  background-color: rgb(12, 173, 236);
+  color: white;
+}
+#id3{
+  background-color: rgb(12, 173, 236);
+  color: white;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(5, 2, 2);
+  margin-top: 20px;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.SocialMedia{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* --------------cards----------------- */
+body{
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/");
+    background-size: cover;
+ }
+ .cardx {
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: 320px 90px 50px;
+    grid-template-areas: "image" "text" "stats";
+  
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:20px;
+  }
+  .cardx-image {
+    grid-area: image;
+  }
+  .cardx-text {
+    grid-area: text;
+  }
+  .cardx-stats {
+    grid-area: stats;
+  }
+  .cardx-image {
+    grid-area: image;
+    background: url("fundaairpoll.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+  .cardx-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  .cardx-text .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .cardx-text p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .cardx-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .cardx-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+  }
+  .cardx-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    color: white;
+    padding:10px;
+  }
+  .cardx:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    
+  }
+  .card2 {
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: 320px 90px 50px;
+    grid-template-areas: "image" "text" "stats";
+  
+    border-radius: 25px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  .card-image2 {
+    grid-area: image;
+  }
+  .card-text2 {
+    grid-area: text;
+  }
+  .card-stats2 {
+    grid-area: stats; 
+  }
+  .card-image2 {
+    grid-area: image;
+    background: url("Healthandeinvor.jpg");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+  }
+  .card-text2 {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-text2 .date2 {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .card-text2 p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-text2 h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-stats2 {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: black;
+  }
+  .card-stats2 .stat2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    color: white;
+    padding:10px;
+  }
+  .card2:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+.card3 {
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: 320px 90px 50px;
+    grid-template-areas: "image" "text" "stats";
+  
+    border-radius: 25px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  .card-image3 {
+    grid-area: image;
+  }
+  .card-text3 {
+    grid-area: text;
+  }
+  .card-stats3 {
+    grid-area: stats; 
+  }
+  .card-image3 {
+    grid-area: image;
+    background: url("Airpollcontrol.jpg");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+  }
+  .card-text3 {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-text3 .date3 {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .card-text3 p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-text3 h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-stats3 {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: red;
+  }
+  .card-stats3 .stat3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    color: white;
+    padding:10px;
+  }
+  .card3:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+section{
+    display: flex;
+    align-items: center; 
+}
+
+  /* -----------------------------Social Media-------------------------------------- */
+  .FB:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .IG:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .LI:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+    </style>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h2 style="color:white;">AIR POLLUTION AND THEIR CONTROL</h2>
+    </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2 id="id1">WHAT IS AIR POLLUTION</h2>
+            <h5></h5>
+            <h6><strong></strong></h6>
+            <div class="V1" style="height:200px;">
+                <video controls autoplay height="200px">
+                    <source src="airpollutionintro.mp4" type="video/mp4">
+                  </video>
+            </div>
+                <p>
+                  Air pollution refers to the presence of harmful substances in the air we breathe. These substances can be gases, particles, or biological molecules that can have negative impacts on human health, the environment, and climate. Air pollution can come from both natural sources (e.g., dust storms, wildfires) and human activities (e.g., burning fossil fuels, industrial processes, transportation). Some of the common air pollutants include carbon monoxide, sulfur dioxide, nitrogen oxides, ozone, and particulate matter. The effects of air pollution can range from minor irritation of the eyes and throat to more serious respiratory and cardiovascular problems, and even premature death.
+                    <br><br>
+                    
+                </p>
+          </div>
+          <div class="card">
+            <h2 id="id2">Effects of air pollution</h2>
+            <h5> </h5>
+            <h6><strong></strong></h6>
+            <div class="V1" style="height:200px;">
+                <video controls autoplay height="200px">
+                    <source src="effectsofairpoll.mp4" type="video/mp4">
+                  </video>
+            </div>
+                <p>
+                  Air pollution can have various harmful effects on both the environment and human health. Some of the effects of air pollution are:<br><br>
+
+                  Respiratory Problems: Air pollution can cause respiratory problems such as asthma, chronic bronchitis, and emphysema. These respiratory problems can be exacerbated in people who already have lung diseases.<br>
+                  
+                  Cardiovascular Problems: Air pollution can also affect the cardiovascular system, leading to increased risk of heart disease, stroke, and other heart-related problems.<br>
+                  
+                  Cancer: Exposure to air pollution has been linked to an increased risk of cancer, particularly lung cancer.<br>
+                  
+                  Birth Defects: Pregnant women who are exposed to air pollution may have a higher risk of giving birth to children with birth defects.<br>
+                  
+                  Global Warming: Air pollution also contributes to global warming and climate change, which can have severe consequences for the planet and its inhabitants.<br>
+                  
+                  Crop Damage: Air pollution can also damage crops, reducing yields and causing economic losses for farmers.<br>
+                  
+                  Acid Rain: Air pollution can cause acid rain, which can damage buildings, statues, and other structures, as well as harm wildlife and aquatic ecosystems.
+                  
+                  
+                    <br><br>
+                    Overall, the effects of air pollution can be far-reaching and devastating, both for human health and the environment. It is important to take steps to reduce air pollution and protect our planet and its inhabitants.
+                </p>
+          </div>
+          <div class="card">
+            <h2 id="id3">CONTROLS FOR AIR POLLUTION</h2>
+            <h5></h5>
+            <h6><strong></strong></h6>
+            <div class="V1" style="height:200px;">
+                <video controls autoplay height="200px">
+                    <source src="controlofeffect.mp4" type="video/mp4">
+                  </video>
+            </div>
+                <p>
+                  There are various methods and techniques to prevent or control air pollution. Some of the common methods are:<br><br>
+
+                  Use of Clean Energy: One of the most effective ways to reduce air pollution is to use clean energy sources such as wind, solar, hydroelectric, or geothermal power. These energy sources emit little or no pollutants and can significantly reduce the levels of air pollution.<br>
+                  
+                  Reduce Vehicle Use: Vehicles are a major contributor to air pollution, especially in urban areas. Reducing vehicle use can help in reducing air pollution. People can use public transportation, carpool, or walk/bike instead of driving alone.<br>
+                  
+                  Plant Trees: Trees are natural air purifiers and can help in reducing air pollution. Planting trees in urban areas can help in reducing the levels of air pollution and improving air quality.<br>
+                  
+                  Use of Energy-Efficient Appliances: Energy-efficient appliances can help in reducing energy consumption and reducing the levels of air pollution. These appliances are designed to use less energy, which in turn reduces the amount of fossil fuels burned to produce electricity.<br>
+                  
+                  Use of Green Cleaning Products: Many household cleaning products emit harmful chemicals that contribute to air pollution. Using green cleaning products can help in reducing the levels of air pollution and improving indoor air quality.<br>
+                  
+                  Proper Waste Management: Proper waste management techniques such as recycling, composting, and proper disposal of hazardous waste can help in reducing air pollution. These techniques can help in reducing the amount of waste that is burned, which in turn reduces the amount of pollutants released into the air.<br>
+                  
+                  Government Regulations: Governments can implement regulations to limit the amount of pollutants that industries and businesses can release into the air. These regulations can help in reducing the levels of air pollution and protecting public health.<br>
+                    <br><br>
+                    
+                </p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card1">
+            <h2><u>About US</u></h2>
+              <iframe src="AboutUs.html" frameborder="20" width="100%" height="365px"></iframe>
+          </div>
+          
+          <div class="card">
+            <h3>Follow us On...</h3>
+            <br>
+            <div class="SocialMedia">
+                <div class="FB">
+                        <img src="FB.jpeg" alt="Facebook" height="40px">
+                    </a>
+                </div>
+                <div class="IG">
+                        <img src="IG.jpeg" alt="Instagram" height="40px">
+                    </a>
+                </div>
+                <div class="LI">
+                        <img src="LI.jpeg" alt="LinkedIn" height="40px">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="ART">
+        <a style="text-decoration: none;" href="Fundamentals of Air Pollution, Fourth Edition ( PDFDrive ).pdf">
+          <div class="cardx">
+          <div class="cardx-image"></div>
+          <div class="cardx-text">
+            <h2>fundamentals of air pollution</h2>
+            <br>
+          </div>
+          <div class="cardx-stats">
+            <div class="stat">
+              <div class="type">Read</div>
+            </div>
+          </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="FANTASY">
+        <a style="text-decoration: none;" href="Air Pollution_ Health and Environmental Impacts - yimg.com ( PDFDrive ).pdf">
+          <div class="card2">
+            <div class="card-image2"></div>
+            <div class="card-text2">
+              <h2>Health and Environmental</h2>
+              <br>
+            </div>
+            <div class="card-stats2">
+              <div class="stat2">
+              <div class="type2">Read</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="SCIENCE">
+        <a style="text-decoration: none;" href="Air Pollution Control Engineering Air Pollution Control Engineering ( PDFDrive ).pdf">
+          <div class="card3">
+            <div class="card-image3"></div>
+            <div class="card-text3">
+              <h2>Control to AIR POLLUTION</h2>
+              <br>
+            </div>
+            <div class="card-stats3">
+              <div class="stat3">
+                <div class="type3">Read</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      </section>
+      <div class="footer">
+        
+      </div> 
+</body>
+</html>
+
+
+
+
